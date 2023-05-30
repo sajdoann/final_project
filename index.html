@@ -29,7 +29,8 @@
     <!-- TODO: add header: HeatMapocalypse
     TODO: dont forget lineplot
     -->
-    <div class="header-id"> <h1>☀ Heat Mapocalypse</h1></div>
+    <div class="header-id"> <h1>☀ Heat Mapocalypse</h1><br><h3>meteorological stations over time</h3></div>
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-8">
@@ -49,7 +50,7 @@
             </div>
             <div class="col-4">
                 <div class="box">
-                    <!--<div class="elements bg"><p>temperature in that time here</p></div>-->
+                    <div class="elements bg"><h3>Coutry info</h3></div>
                     <div class="elements imgBox">            
                         <img src="" alt="Nation flag here" id="flag-id">
                     </div>
@@ -61,7 +62,11 @@
                     </div>
                     <div class="card"></div>
                 </div>
+                <div class="spiral-header-id"><h3>Temperature development</h3></div>
+
                 <div id="spiral-id"></div>
+                <div >end of year</div>
+                <input type="text" id="datepicker">
             </div>
         </div>
     </div>
@@ -70,6 +75,12 @@
 <script src="js/country_box.js"></script>
 <script src="js/spiral.js"></script>
 <script src="js/world_map.js"></script>
+<script>
+    $(function() {
+        $( "#datepicker" ).datepicker();
+    });
+</script>
+
 <script
     src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js" 
     integrity="sha512-RX/OFugt/bkgwRQg4B22KYE79dQhwaPp2IZaA/YyU3GMo/qY7GrXkiG6Dvvwnds6/DefCfwPTgCXnaC6nAgVYw==" 
